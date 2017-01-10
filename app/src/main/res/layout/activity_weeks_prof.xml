@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_width="400"
+        sl:scale_base_height="80">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnHomeWeeksProf"
+            sl:scale_left="180"
+            sl:scale_top="10"
+            sl:scale_width="40"
+            sl:scale_height="60"
+            android:src="@drawable/check" />
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_width="400"
+        sl:scale_base_height="50">
+        <TextView
+            android:id="@+id/tvClassNameWeeksProf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            sl:scale_top="00"
+            sl:scale_left="0"
+            sl:scale_width="400"
+            sl:scale_height="35"
+            sl:scale_textsize="30"
+            android:textAlignment="center"/>
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_width="400"
+        sl:scale_base_height="500">
+        <ExpandableListView
+            android:id="@+id/expandableListView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            sl:scale_left="10"
+            sl:scale_top="30"
+            sl:scale_width="380"
+            sl:scale_height="500"/>
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+</LinearLayout>

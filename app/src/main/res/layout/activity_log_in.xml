@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:onClick="linearOnClick"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".LogIn">
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_width="400"
+        sl:scale_base_height="300">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            sl:scale_left="150"
+            sl:scale_top="150"
+            sl:scale_width="100"
+            sl:scale_height="100"
+            android:src="@drawable/check" />
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_width="400"
+        sl:scale_base_height="200">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvID"
+            sl:scale_left="50"
+            sl:scale_top="0"
+            sl:scale_width="250"
+            sl:scale_height="50"
+            sl:scale_textsize="20"
+            android:hint="아이디"
+            android:textColorHint="#0A8A39"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPW"
+            sl:scale_left="50"
+            sl:scale_top="50"
+            sl:scale_width="250"
+            sl:scale_height="50"
+            sl:scale_textsize="20"
+            android:password="true"
+            android:hint="비밀번호"
+            android:textColorHint="#0A8A39"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnEnter"
+            sl:scale_left="300"
+            sl:scale_top="0"
+            sl:scale_width="70"
+            sl:scale_height="110"
+            android:src="@drawable/login"/>
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+</LinearLayout>

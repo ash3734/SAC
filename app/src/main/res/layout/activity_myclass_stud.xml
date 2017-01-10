@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_width="400"
+        sl:scale_base_height="80">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnListMyClassStud"
+            sl:scale_left="20"
+            sl:scale_top="10"
+            sl:scale_width="40"
+            sl:scale_height="60"
+            android:src="@drawable/list" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnHomeMyClassStud"
+            sl:scale_left="180"
+            sl:scale_top="10"
+            sl:scale_width="40"
+            sl:scale_height="60"
+            android:src="@drawable/check" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStartMyClassStud"
+            sl:scale_left="340"
+            sl:scale_top="10"
+            sl:scale_width="40"
+            sl:scale_height="60"
+            android:src="@drawable/start" />
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_width="400"
+        sl:scale_base_height="80">
+        <TextView
+            android:id="@+id/tvClassNameStud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            sl:scale_top="10"
+            sl:scale_left="0"
+            sl:scale_width="400"
+            sl:scale_height="35"
+            sl:scale_textsize="30"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/tvDateStud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            sl:scale_top="50"
+            sl:scale_left="0"
+            sl:scale_width="400"
+            sl:scale_height="20"
+            sl:scale_textsize="15"
+            android:textAlignment="center"/>
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+    <FrameLayout
+        android:id="@+id/student_advertiser_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
